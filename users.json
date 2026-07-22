@@ -1,0 +1,10 @@
+{
+    "hosterikhlas": {
+        "password": "IKHLASTHEADMIN",
+        "role": "hosterikhlas"
+    },
+    "admin": {
+        "password": "IKHLASTHEADMIN",
+        "role": "admin"
+    }
+}
