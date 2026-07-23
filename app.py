@@ -17,7 +17,11 @@ app = Flask(__name__)
 app.secret_key = 'ikhlas-super-secret-key-2026'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
-USERS_FILE = 'users.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+USERS_FILE = os.path.join(BASE_DIR, "users.json")
+
+print("Current Working Directory:", os.getcwd())
+print("Users file path:", os.path.abspath(USERS_FILE))
 BOTS_DIR = 'bots'
 CPU_HISTORY = {}
 CRASH_COUNT = {}
